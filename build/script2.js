@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var PromptSync = require("prompt-sync");
+var atividade2_1 = require("./atividade2");
+var prompt = PromptSync();
+var nome = prompt('Digite seu nome:');
+var agencia = Number(prompt('Digite sua agencia:'));
+var senha = Number(prompt('Digite sua senha:'));
+var email = prompt('Digite seu email:');
+var contabanco = new atividade2_1.contaBanco(nome, agencia, senha, email);
+console.log("O nome \u00E9 ".concat(nome));
+console.log("A ag\u00EAncia \u00E9 ".concat(agencia));
+console.log("A senha \u00E9 ".concat(senha));
+console.log("O email \u00E9 ".concat(email));
